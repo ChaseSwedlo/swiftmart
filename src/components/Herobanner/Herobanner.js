@@ -1,23 +1,29 @@
 import React from "react";
-import "./Herobanner.css";
 import { Carousel } from "antd";
+import './Herobanner.css';
 
 
-function Herobanner() {
+function HeroBanner() {
     const bannerImgs =[
-        "https://gw.alicdn.com/imgextra/i3/O1CN01Am8Sra21Zaice06ax_!!6000000006999-2-tps-1130-500.png_570x10000.jpg_.webp",
-        "https://gw.alicdn.com/tps/TB1Lw9SLVXXXXajaXXXXXXXXXXX-1130-500.jpg_570x10000Q75.jpg_.webp",
-        "https://gw.alicdn.com/tps/i4/i3/6000000003435/O1CN01fS1G4M1bFHA2rvIwi_!!6000000003435-0-ald.jpg_570x10000Q75.jpg_.webp"
+      "https://www.uniqlo.cn/public/image/L1/2024/May/0517/5-T1.jpg",
+      "https://im.uniqlo.com/global-cms/spa/res54edad86017b2a3299f3cb6634cb39c5fr.jpg",
+        "https://im.uniqlo.com/global-cms/spa/res95f697cbf83fe768c79b66be8a3f23b9fr.jpg"
     ]
-
+  const captions = [
+    "Women's Linen Cotton Shirts, fully, freely, and for longer.",
+    "T-shirts feature the youth, pursuing a future for clothes.",
+    "Enthusiasm, Courage, Youth. Enjoy your LifeWear. "
+  ];
   return (
     <section className="hero-banner">
       <div className="container">
         <div className="hero-content">
-          <Carousel autoplay arrows>
+          <Carousel autoplay >
             {bannerImgs.map((img, index) => (
               <div className="banner-item" key={index}>
                 <img src={img} alt="banner" />
+                <div className="caption">{captions[index]}</div> 
+                <button className="banner-button">Shop Now</button>  
               </div>
             ))}
           </Carousel>
@@ -27,4 +33,4 @@ function Herobanner() {
   );
 }
 
-export default Herobanner;
+export default HeroBanner;

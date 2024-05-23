@@ -18,6 +18,7 @@ function Home() {
     >
       <Herobanner/>
       <Products />
+     
     </motion.section>
   );
 }
