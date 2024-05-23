@@ -1,0 +1,76 @@
+:root {
+  --purple: rgba(106, 59, 182, 0.8);
+  --green: rgba(0, 161, 80, 0.8);
+  --blue: rgba(0, 114, 190, 0.8);
+  --main-theme-color: rgb(0, 64, 221);
+  --second-theme-color: rgb(221, 157, 0);
+}
+
+.container {
+  width: min(100% - 30px, 1080px);
+  margin-inline: auto;
+}
+
+body {
+  font-family: "Inter", Arial, sans-serif;
+  color: rgb(0, 0, 0);
+  scrollbar-gutter: stable;
+}
+
+.flex {
+  display: flex;
+}
+
+.sb {
+  justify-content: space-between;
+}
+
+.gap-20 {
+  gap: 20px;
+}
+
+.gap-15 {
+  gap: 15px;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body, html {
+  scrollbar-width: none;
+  -ms-overflow-style: none; 
+}
+
+/*404 Not found page*/
+
+.full-page {
+  height: calc(100svh - 104px);
+  background-color: rgb(255, 255, 255);
+  display: grid;
+  place-items: center;
+  div {
+    margin-top: -68px;
+    width: 100%;
+    display: grid;
+  place-items: center;
+    figure {
+      width: 40%;
+    }
+    button {
+      font-size: 16px;
+      font-weight: 600;
+      background-color: var(--main-theme-color);
+      color: rgb(255, 255, 255);
+      padding: 10px 25px;
+      border-radius: 100px;
+      transition-duration: 0.2s;
+      &:hover {
+        background-color: rgb(50, 108, 255);
+      }
+      &:active {
+        background-color: rgb(0, 52, 183);
+      }
+    }
+  }
+}

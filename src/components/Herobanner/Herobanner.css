@@ -1,0 +1,7 @@
+.hero-banner .banner-item {
+    width: 100%;
+    img {
+        height: 560px;
+        object-fit: cover;
+    }
+}

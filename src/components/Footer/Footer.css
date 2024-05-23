@@ -1,0 +1,35 @@
+.footer {
+  background-color: rgb(240, 240, 242);
+}
+
+.footer-content {
+  padding: 30px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-item {
+  margin-right: 50px;
+  li {
+    margin-bottom: 10px;
+    cursor: pointer;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.footer-ul-title {
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+.footer-bottom-wrap {
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  p {
+    opacity: 0.7;
+    user-select: none;
+  }
+}

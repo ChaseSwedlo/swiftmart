@@ -1,0 +1,104 @@
+header {
+  background-color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+}
+
+.top-header {
+  background-color: rgb(0, 64, 221);
+  font-size: 12px;
+  font-weight: 500;
+  width: 100%;
+  p {
+    text-align: center;
+    cursor: pointer;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.left-top-header, .right-top-header {
+  width: 200px;
+  line-height: 36px;
+}
+
+.left-top-header {
+  justify-content: left;
+}
+
+.middle-top-header {
+  justify-content: center;
+  width: calc(100% - 400px);
+  line-height: 36px;
+}
+
+.locate, .phone {
+  margin-top: 12.5px;
+  cursor: pointer;
+  margin-right: 4px;
+  width: 13px;
+}
+
+.right-top-header {
+  justify-content: right;
+  p {
+    margin-left: 3px;
+    font-size: 11px;
+    cursor: pointer;
+  }
+}
+
+.down {
+  margin-top: 12px;
+  &:first-of-type {
+    margin-right: 13px;
+    cursor: pointer;
+  }
+}
+
+.main-header {
+  div {
+    width: 200px;
+    height: 68px;
+  }
+}
+
+.logo {
+  justify-content: left;
+  text-decoration: none;
+  svg {
+    height: 40px;
+    width: 40px;
+    margin-top: 14px;
+    color: rgba(0, 0, 0, 0.7);
+    margin-right: 8px;
+  }
+  h1 {
+    font-size: 24px;
+    line-height: 68px;
+    font-weight: 450;
+    color: rgb(0, 0, 0);
+  }
+}
+
+.header-buttons {
+  justify-content: right;
+  color: rgb(0, 0, 0);
+  line-height: 68px;
+  svg {
+    margin-top: 25px;
+    margin-right: 5px;
+    cursor: pointer;
+  }
+  p {
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  p:first-of-type {
+    margin-right: 20px;
+  }
+}
