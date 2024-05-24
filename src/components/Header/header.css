@@ -81,7 +81,8 @@ header {
   }
 }
 
-.header-buttons {
+.header-buttons, .cart-button {
+  text-decoration: none;
   justify-content: right;
   color: rgb(0, 0, 0);
   line-height: 68px;

@@ -9,6 +9,7 @@ import Dialog from './components/Dialog/Dialog';
 import Home from './pages/Home';
 import ProductPage from './pages/ProductPage';
 import NotFound from './pages/NotFound';
+import CartPage from './pages/CartPage';
 
 function App() {
   const location = useLocation();
@@ -22,6 +23,7 @@ function App() {
             <Routes location={location} key={location.pathname}>
               <Route path="/" element={<Home />} />
               <Route path='/products/:slug' element={<ProductPage />}/>
+              <Route path='/cart' element={<CartPage />}/>
               <Route path="*" element={<NotFound />} />
             </Routes>
           </AnimatePresence>

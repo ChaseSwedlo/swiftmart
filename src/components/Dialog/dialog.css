@@ -46,7 +46,7 @@
   }
 }
 
-form {
+.create-account-form {
   display: grid;
   place-items: center;
   margin-top: 20px;

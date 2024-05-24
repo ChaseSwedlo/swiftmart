@@ -34,15 +34,17 @@ function Header() {
       </section>
       <div className='container'>
         <section className='main-header flex sb'>
-        <Link to={`/`} className='logo flex'>
+          <Link to={`/`} className='logo flex'>
             <FaStroopwafel className='fa-logo'/>
             <h1>SwiftMart</h1>
           </Link>
           <div className='flex header-buttons'>
             <FaUser/>
             <p onClick={handleSignUpClick}>Sign Up</p>
-            <FaShoppingCart/>
-            <p>Cart</p>
+            <Link to={'/cart'} className='flex cart-button'>
+              <FaShoppingCart/>
+              <p>Cart</p>
+            </Link>
           </div>
         </section>
       </div>

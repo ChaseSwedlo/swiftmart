@@ -34,7 +34,7 @@ function Dialog() {
           >
             <div className='form-box' onClick={(event) => (event.stopPropagation())}>
               <h2>Create Account</h2>
-              <form onSubmit={handleSubmit(onSubmit)}>
+              <form onSubmit={handleSubmit(onSubmit)} className='create-account-form'>
               <input 
                 type='text'
                 placeholder='Username'

@@ -58,7 +58,7 @@ const Product = () => {
         animate={{ 
           opacity: 1, 
           x: 0,
-          transition: { duration: 0.3}
+          transition: { duration: 0.3,  delay: 0.2}
         }}
         exit={{ 
           opacity: 0, 
