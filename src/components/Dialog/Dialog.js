@@ -51,7 +51,7 @@ function Dialog() {
               />
               <input 
                 type='text'
-                placeholder='Password'
+                placeholder='Password (8 characters min)'
                 autoComplete='off'
                 className={errors.year ? 'error' : ''}
                 {...register("year", {

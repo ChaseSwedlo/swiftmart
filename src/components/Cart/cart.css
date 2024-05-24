@@ -5,7 +5,7 @@
 }
 
 .boxx {
-  background-color: #fff;
+  background-color: rgb(255, 255, 255);
   padding: 20px;
 }
 
@@ -24,13 +24,13 @@ h1,
 h2,
 h3,
 p {
-  color: #706e6e;
+  color: rgb(112, 110, 110);
   font-weight: 400;
 }
 
 h3 {
   font-size: 23px;
-  color: rgb(0, 64, 221);
+  color: var(--main-theme-color);
   font-weight: 500;
 }
 }
@@ -58,7 +58,7 @@ h3 {
 }
 
 .header {
-  border-bottom: 1px solid #f7f0f0f6;
+  border-bottom: 1px solid rgba(247, 240, 240, 0.965);
   padding-bottom: 10px;
 }
 
@@ -95,7 +95,7 @@ h3 {
 .payment-form input[type=radio] {
   margin-top: 10px;
   margin-right: 5px;
-  color: green;
+  color: rgb(0, 128, 0);
 }
 
 
@@ -108,10 +108,9 @@ h3 {
 .promo {
   height: 40px;
   width: 100%;
-  background-color: #f0eeee;
+  background-color: rgb(240, 238, 238);
   border-radius: 20px;
-  padding-left: 10px;
-  padding-right: 2px;
+  padding: 0 15px;
   align-items: center;
   cursor: text;
 }
@@ -124,10 +123,12 @@ h3 {
   line-height: 33px;
   height: 36px;
   width: 90px;
+  padding-top: 1px;
   border-radius: 20px;
-  background-color: rgb(0, 64, 221);
-  color: #fff;
+  background-color: var(--main-theme-color);
+  color: rgb(255, 255, 255);
   cursor: pointer;
+  font-weight: 500;
 }
 
 .totals {
@@ -147,7 +148,7 @@ h3 {
 
 .cost p:last-child {
   font-weight: 600;
-  color: rgb(0, 64, 221);
+  color: black;
 }
 
 .final p:first-child{
@@ -161,25 +162,25 @@ h3 {
   flex-direction: column;
   gap: 10px;
   button {
-    background-color: #fff;
     width: 100%;
     height: 45px;
     border-radius: 30px;
   }
 }
 
-.primary {
-  background-color: rgb(0, 64, 221);
-  color: #fff;
+.primary-button {
+  background-color: var(--main-theme-color);
+  color: white;
 }
 
 .secondary {
-  border: 1px solid rgb(0, 64, 221);
+  background-color: rgb(255, 255, 255);
+  border: 1px solid var(--main-theme-color);
 }
 
 .icon {
   cursor: pointer;
-  color: rgb(0, 64, 221);
+  color: var(--main-theme-color);
 }
 
 .productt {
@@ -191,13 +192,21 @@ h3 {
 .product-imagee {
   width: 90px;
   height: 80px;
+  background-color: white;
+  border-left: 1px solid rgb(163, 163, 163);
+  margin-right: 5px;
+  img {
+    width: 100%;
+  height: 100%;
+  object-fit: contain;
+  }
 }
 
 .product-details {
   width: 260px;
 }
 
-.quantity {
+.quantityy {
   width: 100px;
   justify-self: end;
   align-items: center;
@@ -207,10 +216,10 @@ h3 {
 }
 
 .count {
-  background-color: #fff;
+  background-color: rgb(255, 255, 255);
   width: 25px;
   border-radius: 3px;
-  border: 1px solid #838080;
+  border: 1px solid rgb(131, 128, 128);
   text-align: center;
 }
 

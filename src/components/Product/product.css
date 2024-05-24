@@ -136,6 +136,7 @@ html {
 
 .quantity {
   margin-top: 20px;
+  display: flex;
   input {
     user-select: none;
     color: rgba(59, 59, 59, 0.8);
@@ -146,7 +147,7 @@ html {
     font-size: 15px;
     border: 1px solid rgba(168, 168, 168, 0.66);
   }
-  button {
+  .qbuttons {
     transition-duration: 0.2s;
     width: 40px;
     height: 40px;

@@ -7,7 +7,7 @@ function HeroBanner() {
     const bannerImgs =[
       "https://www.uniqlo.cn/public/image/L1/2024/May/0517/5-T1.jpg",
       "https://im.uniqlo.com/global-cms/spa/res54edad86017b2a3299f3cb6634cb39c5fr.jpg",
-        "https://im.uniqlo.com/global-cms/spa/res95f697cbf83fe768c79b66be8a3f23b9fr.jpg"
+      "https://im.uniqlo.com/global-cms/spa/res95f697cbf83fe768c79b66be8a3f23b9fr.jpg"
     ]
   const captions = [
     "Women's Linen Cotton Shirts, fully, freely, and for longer.",

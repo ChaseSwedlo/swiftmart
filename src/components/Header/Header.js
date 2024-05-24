@@ -1,5 +1,5 @@
 import './header.css';
-import { FaAngleDown, FaLocationArrow, FaPhone, FaStroopwafel, FaShoppingCart } from "react-icons/fa";
+import { FaAngleDown, FaLocationArrow, FaPhone, FaShoppingCart, FaCartArrowDown } from "react-icons/fa";
 import { FaUser } from "react-icons/fa6";
 import { useContext } from 'react';
 import DialogContext from '../../DialogContext';
@@ -35,13 +35,24 @@ function Header() {
       <div className='container'>
         <section className='main-header flex sb'>
           <Link to={`/`} className='logo flex'>
-            <FaStroopwafel className='fa-logo'/>
+            <FaCartArrowDown className='fa-logo'/>
             <h1>SwiftMart</h1>
           </Link>
+          <div className='header-nav'>
+            <nav>
+              <ul className='flex'>
+                <Link to={'/'} className='home-link'>
+                  <li>Products</li>
+                </Link>
+                <li>About</li>
+                <li>Contact</li>
+              </ul>
+            </nav>
+          </div>
           <div className='flex header-buttons'>
             <FaUser/>
             <p onClick={handleSignUpClick}>Sign Up</p>
-            <Link to={'/cart'} className='flex cart-button'>
+            <Link to={'/cart'} className='flex cart-button right'>
               <FaShoppingCart/>
               <p>Cart</p>
             </Link>

@@ -43,7 +43,6 @@ body, html {
 }
 
 /*404 Not found page*/
-
 .full-page {
   height: calc(100svh - 104px);
   background-color: rgb(255, 255, 255);

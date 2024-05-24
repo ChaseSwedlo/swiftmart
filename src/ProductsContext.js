@@ -27,7 +27,6 @@ const ProductsProvider = ({ children }) => {
           slug: createSlug(product.title),
           price: formatPrice(product.price),
         }));
-        console.log(productsWithSlugs);
         setProducts(productsWithSlugs);
       } catch (error) {
         console.error('Error fetching products:', error);

@@ -90,9 +90,13 @@ const Product = () => {
           <p className='cat'>Category:<span>{` ${product.category}`}</span></p>
           </div>
           <div className='quantity'>
-            <button onClick={decrement} disabled={quantity < 2}>-</button>
+            <button onClick={decrement} disabled={quantity < 2} className='qbuttons'>
+              -
+            </button>
               <input type='text'value={quantity} readOnly/>
-            <button onClick={increment} disabled={quantity > 9}>+</button>
+            <button onClick={increment} disabled={quantity > 9} className='qbuttons'>
+              +
+            </button>
           </div>
           <div className='buttons'>
             <button>

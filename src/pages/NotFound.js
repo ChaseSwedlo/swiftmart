@@ -10,7 +10,7 @@ function NotFound() {
       initial={{ opacity: 0}}
       animate={{ 
       opacity: 1, 
-      transition: { duration: 0.2 }
+      transition: { duration: 0.2, delay: 0.2 }
     }}
     exit={{ 
       opacity: 0, 
@@ -28,7 +28,7 @@ function NotFound() {
         </Link>
       </div>
     </motion.section>
-  )
+  );
 }
 
-export default NotFound
+export default NotFound;

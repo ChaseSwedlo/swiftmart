@@ -3,13 +3,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPenToSquare } from '@fortawesome/free-solid-svg-icons'
 import { faCirclePlus } from '@fortawesome/free-solid-svg-icons'
 import { faCircleMinus } from '@fortawesome/free-solid-svg-icons'
+import { useContext } from 'react';
 import mapIcon from './map-icon.png'
-import productOne from './map-icon.png'
-import productTwo from './map-icon.png'
-import productThree from './map-icon.png'
-import productFour from './map-icon.png'
+import { ProductsContext } from '../../ProductsContext';
 
 function Cart() {
+  const products = useContext(ProductsContext);
   return (
     <div className='cart-div'>
       <div className='page-container container flex'>
@@ -36,14 +35,14 @@ function Cart() {
             <div className='review-body body'>
               <div className='productt flex'>
                 <div className='product-imagee'>
-                  <img alt='one'src={productOne} />
+                  <img alt='one'src={products[0].image} />
                 </div>
                 <div className='product-details'>
-                  <p>Product name</p>
-                  <p>size/variation</p>
-                  <p>$9.99</p>
+                  <p>Foldsack No. 1 Backpack</p>
+                  <p>Blue</p>
+                  <p>{`$${products[0].price}`}</p>
                 </div>
-                <div className='quantity flex'>
+                <div className='quantityy flex'>
                   <FontAwesomeIcon icon={faCircleMinus} className='icon' />
                   <p className='count'>3</p>
                   <FontAwesomeIcon icon={faCirclePlus} className='icon' />
@@ -51,14 +50,14 @@ function Cart() {
               </div>
               <div className='productt flex'>
                 <div className='product-imagee'>
-                  <img alt='two' src={productTwo} />
+                  <img alt='two' src={products[1].image} />
                 </div>
                 <div className='product-details'>
-                  <p>Product name</p>
-                  <p>size/variation</p>
-                  <p>$9.99</p>
+                  <p>Mens Casual Premium T-Shirts</p>
+                  <p>L</p>
+                  <p>{`$${products[1].price}`}</p>
                 </div>
-                <div className='quantity flex'>
+                <div className='quantityy flex'>
                   <FontAwesomeIcon icon={faCircleMinus} className='icon' />
                   <p className='count'>1</p>
                   <FontAwesomeIcon icon={faCirclePlus} className='icon' />
@@ -66,14 +65,14 @@ function Cart() {
               </div>
               <div className='productt flex'>
                 <div className='product-imagee'>
-                  <img alt='three' src={productThree} />
+                  <img alt='three' src={products[2].image} />
                 </div>
                 <div className='product-details'>
-                  <p>Product name</p>
-                  <p>size/variation</p>
-                  <p>$9.99</p>
+                  <p>Mens Cotton Jacket</p>
+                  <p>M</p>
+                  <p>{`$${products[2].price}`}</p>
                 </div>
-                <div className='quantity flex'>
+                <div className='quantityy flex'>
                   <FontAwesomeIcon icon={faCircleMinus} className='icon' />
                   <p className='count'>2</p>
                   <FontAwesomeIcon icon={faCirclePlus} className='icon' />
@@ -81,14 +80,14 @@ function Cart() {
               </div>
               <div className='productt flex'>
                 <div className='product-imagee'>
-                  <img alt='four' src={productFour} />
+                  <img alt='four' src={products[15].image} />
                 </div>
                 <div className='product-details'>
-                  <p>Product name</p>
-                  <p>size/variation</p>
-                  <p>$9.99</p>
+                  <p>Leather Moto Biker Jacket</p>
+                  <p>S</p>
+                  <p>{`$${products[16].price}`}</p>
                 </div>
-                <div className='quantity flex'>
+                <div className='quantityy flex'>
                   <FontAwesomeIcon icon={faCircleMinus} className='icon' />
                   <p className='count'>3</p>
                   <FontAwesomeIcon icon={faCirclePlus} className='icon' />
@@ -127,7 +126,7 @@ function Cart() {
               </div>
               <div className='cost'>
                 <p>Discount</p>
-                <p>-$10.99</p>
+                <p className='discount'>-$10.99</p>
               </div>
               <div className='cost header'>
                 <p>Taxes</p>
@@ -138,12 +137,11 @@ function Cart() {
                 <p>$100.99</p>
               </div>
               <div className='buttonss'>
-                <button className='primary'>Continue with PayPal</button>
+                <button className='primary-button'>Continue with PayPal</button>
                 <button className='secondary'>Confirm order</button>
               </div>
             </div>
           </div>
-          {/* <div className='bottom-right box'></div> */}
         </div>
       </div>
     </div>
