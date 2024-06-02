@@ -74,7 +74,7 @@ header {
     margin-right: 8px;
   }
   h1 {
-    font-size: 24px;
+    font-size: 22px;
     line-height: 68px;
     font-weight: 450;
     color: rgb(0, 0, 0);
@@ -87,12 +87,12 @@ header {
   color: rgb(0, 0, 0);
   line-height: 68px;
   svg {
-    margin-top: 25px;
+    margin-top: 24px;
     margin-right: 5px;
     cursor: pointer;
   }
   p {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 500;
     cursor: pointer;
     &:hover {
@@ -108,7 +108,7 @@ header {
   width: 500px;
   nav ul li {
     color: rgb(0, 0, 0);
-    font-size: 18px;
+    font-size: 16px;
     line-height: 68px;
     font-weight: 550;
     cursor: pointer;

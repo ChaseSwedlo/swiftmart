@@ -17,6 +17,10 @@ body {
   scrollbar-gutter: stable;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .flex {
   display: flex;
 }

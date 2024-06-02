@@ -9,6 +9,11 @@ import { ProductsContext } from '../../ProductsContext';
 
 function Cart() {
   const products = useContext(ProductsContext);
+  let price1 = parseFloat(products[1].price);
+  let price2 = parseFloat(products[2].price);
+  let price3 = parseFloat(products[15].price);
+  let price4 = parseFloat(products[0].price);
+  let subtotal = price1 + price2 + price3 + price4;
   return (
     <div className='cart-div'>
       <div className='page-container container flex'>
@@ -118,7 +123,7 @@ function Cart() {
             <div className='totals body'>
               <div className='cost'>
                 <p>Subtotal</p>
-                <p>$10.99</p>
+                <p>${subtotal}</p>
               </div>
               <div className='cost'>
                 <p>Delivery fee</p>
@@ -134,7 +139,7 @@ function Cart() {
               </div>
               <div className='cost final'>
                 <p>Total</p>
-                <p>$100.99</p>
+                <p>${10.99 + subtotal}</p>
               </div>
               <div className='buttonss'>
                 <button className='primary-button'>Continue with PayPal</button>

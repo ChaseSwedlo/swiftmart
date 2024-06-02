@@ -1,13 +1,17 @@
 import React from "react";
 import { Carousel } from "antd";
 import './Herobanner.css';
+import one from './img1.jpg';
+import two from './img2.jpg';
+import three from './img3.jpg';
+
 
 
 function HeroBanner() {
     const bannerImgs =[
-      "https://www.uniqlo.cn/public/image/L1/2024/May/0517/5-T1.jpg",
-      "https://im.uniqlo.com/global-cms/spa/res54edad86017b2a3299f3cb6634cb39c5fr.jpg",
-      "https://im.uniqlo.com/global-cms/spa/res95f697cbf83fe768c79b66be8a3f23b9fr.jpg"
+      one,
+      two,
+      three
     ]
   const captions = [
     "Women's Linen Cotton Shirts, fully, freely, and for longer.",

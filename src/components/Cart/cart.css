@@ -30,7 +30,7 @@ p {
 
 h3 {
   font-size: 23px;
-  color: var(--main-theme-color);
+  color: rgb(0, 0, 0);
   font-weight: 500;
 }
 }
@@ -175,7 +175,9 @@ h3 {
 
 .secondary {
   background-color: rgb(255, 255, 255);
-  border: 1px solid var(--main-theme-color);
+  border: 1.5px solid var(--main-theme-color);
+  font-weight: 500;
+  color: var(--main-theme-color);
 }
 
 .icon {
